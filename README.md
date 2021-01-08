@@ -1,1 +1,1 @@
-# 10-Days-Of-Javascript-HackerRank-
+HackerRank 10 Days Of Javascript Solutions
