@@ -18,11 +18,13 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
-function regexVar() {
+function regexVar() 
+{
     /*
      * Declare a RegExp object variable named 're'
      * It must match a string that starts with 'Mr.', 'Mrs.', 'Ms.', 'Dr.', or 'Er.', 
@@ -37,7 +39,8 @@ function regexVar() {
 }
 
 
-function main() {
+function main() 
+{
     const re = regexVar();
     const s = readLine();
     
