@@ -18,11 +18,13 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
-function regexVar() {
+function regexVar() 
+{
     /*
      * Declare a RegExp object variable named 're'
      * It must match ALL occurrences of numbers in a string.
@@ -35,13 +37,15 @@ function regexVar() {
 }
 
 
-function main() {
+function main() 
+{
     const re = regexVar();
     const s = readLine();
     
     const r = s.match(re);
     
-    for (const e of r) {
+    for (const e of r) 
+    {
         console.log(e);
     }
 }
