@@ -18,7 +18,8 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
@@ -31,23 +32,32 @@ function readLine() {
 function isPositive(a) 
 {
     if(a>0)
-    {    return "YES";}
-    else if(a==0)
-    {    throw new Error("Zero Error");}
-    else if(a<0)
-    {   throw new Error("Negative Error");}    
+    {    
+        return "YES";}
+        else if(a==0)
+        {    
+            throw new Error("Zero Error");
+        }
+        else if(a<0)
+        {   
+            throw new Error("Negative Error");
+        }    
 }
 
 
-function main() {
+function main() 
+{
     const n = +(readLine());
     
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < n; i++) 
+    {
         const a = +(readLine());
-      
-        try {
+        try 
+        {
             console.log(isPositive(a));
-        } catch (e) {
+        } 
+        catch (e) 
+        {
             console.log(e.message);
         }
     }
