@@ -18,7 +18,8 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
@@ -29,21 +30,24 @@ function readLine() {
 function reverseString(s) 
 {
     if (typeof s != "string") 
-     {  console.log("s.split is not a function")
+     {   
+        console.log("s.split is not a function")
         console.log(s);
      }       
     else
     {             
         var newString = "";
         for (var i = s.length - 1; i >= 0; i--) 
-        {   newString += s[i];
+        {   
+            newString += s[i];
         }
         console.log(newString);
     }
 }
 
 
-function main() {
+function main() 
+{
     const s = eval(readLine());
     
     reverseString(s);
