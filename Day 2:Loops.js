@@ -18,19 +18,26 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
-
-function vowelsAndConsonants(s) {
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+function vowelsAndConsonants(s) 
+{
     let vowels = ["a", "e", "i", "o", "u"];
 
-    for(let v of s) {
+    for(let v of s) 
+    {
         if(vowels.includes(v))
             console.log(v);
     }
     
-    for(let v of s) {
+    for(let v of s) 
+    {
         if(!vowels.includes(v))
             console.log(v);
     }
@@ -38,7 +45,8 @@ function vowelsAndConsonants(s) {
 }
 
 
-function main() {
+function main() 
+{
     const s = readLine();
     
     vowelsAndConsonants(s);
