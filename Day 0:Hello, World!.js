@@ -29,7 +29,8 @@ function readLine() {
 *	Parameter:
 *   parameterVariable - A string of text.
 **/
-function greeting(parameterVariable) {
+function greeting(parameterVariable) 
+{
     // This line prints 'Hello, World!' to the console:
     console.log('Hello, World!');
 
@@ -38,8 +39,8 @@ function greeting(parameterVariable) {
 }
 
 
-function main() {
-    const parameterVariable = readLine();
-    
+function main() 
+{
+    const parameterVariable = readLine();    
     greeting(parameterVariable);
 }
