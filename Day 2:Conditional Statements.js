@@ -18,12 +18,15 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
-function getGrade(score) {
+function getGrade(score) 
+{
     let grade;
+    // Write your code here
         if(score>25 && score<=30)
         grade='A';
         else if(score>20 && score<=25)
@@ -41,8 +44,8 @@ function getGrade(score) {
 }
 
 
-function main() {
-    const score = +(readLine());
-    
+function main() 
+{
+    const score = +(readLine());    
     console.log(getGrade(score));
 }
