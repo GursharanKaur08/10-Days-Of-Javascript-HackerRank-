@@ -18,12 +18,15 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
-function getLetter(s) {
+function getLetter(s) 
+{
     let letter;
+    // Write your code here
     switch(s[0]){
         case 'a' : 
         case 'e' :
@@ -55,7 +58,8 @@ function getLetter(s) {
 }
 
 
-function main() {
+function main()
+{
     const s = readLine();
     
     console.log(getLetter(s));
