@@ -18,23 +18,26 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 /*
  * Create the function factorial here
  */
-function factorial(n){
+function factorial(n)
+{
     var sum = 1;
-    while(n > 0){
+    while(n > 0)
+    {
         sum *= n;
         n--;
     }
     return sum;
 }
 
-function main() {
-    const n = +(readLine());
-    
+function main() 
+{
+    const n = +(readLine());    
     console.log(factorial(n));
 }
