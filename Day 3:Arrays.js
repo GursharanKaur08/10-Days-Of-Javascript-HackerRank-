@@ -18,7 +18,8 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
@@ -47,7 +48,8 @@ function getSecondLargest(nums)
 }
 
 
-function main() {
+function main() 
+{
     const n = +(readLine());
     const nums = readLine().split(' ').map(Number);
     
