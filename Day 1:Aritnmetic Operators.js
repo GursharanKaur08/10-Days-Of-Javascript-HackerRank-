@@ -30,7 +30,8 @@ function readLine() {
 *   
 *	Return a number denoting the rectangle's area.
 **/
-function getArea(length, width) {
+function getArea(length, width) 
+{
     let area;
     // Write your code here
     area = length*width;
@@ -45,7 +46,8 @@ function getArea(length, width) {
 *   
 *	Return a number denoting the perimeter of a rectangle.
 **/
-function getPerimeter(length, width) {
+function getPerimeter(length, width) 
+{
     let perimeter;
     // Write your code here
     perimeter = 2*(length+width)
@@ -53,7 +55,8 @@ function getPerimeter(length, width) {
 }
 
 
-function main() {
+function main() 
+{
     const length = +(readLine());
     const width = +(readLine());
     
