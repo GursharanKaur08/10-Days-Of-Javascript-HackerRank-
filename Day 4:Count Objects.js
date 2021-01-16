@@ -18,7 +18,8 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
@@ -28,7 +29,8 @@ function readLine() {
  * Parameter(s):
  * objects: an array of objects with integer properties 'x' and 'y'
  */
-function getCount(objects) {
+function getCount(objects) 
+{
     let count=0 ;
     objects.forEach(function(item)
     {
@@ -41,13 +43,14 @@ function getCount(objects) {
 }
 
 
-function main() {
+function main() 
+{
     const n = +(readLine());
     let objects = [];
     
-    for (let i = 0; i < n; i++) {
-        const [a, b] = readLine().split(' ');
-        
+    for (let i = 0; i < n; i++) 
+    {
+        const [a, b] = readLine().split(' ');        
         objects.push({x: +(a), y: +(b)});
     }
     
