@@ -18,7 +18,8 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
@@ -28,8 +29,10 @@ function readLine() {
  * Parameter(s):
  * nums: An array of numbers.
  */
-function modifyArray(nums) {
-    var something = function(n){
+function modifyArray(nums) 
+{
+    var something = function(n)
+    {
         if(n%2==0)
             return n*2;
         else
@@ -41,7 +44,8 @@ function modifyArray(nums) {
 }
 
 
-function main() {
+function main() 
+{
     const n = +(readLine());
     const a = readLine().split(' ').map(Number);
     
