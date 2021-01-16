@@ -5,21 +5,22 @@
  */
   class Polygon
     {
-        constructor(sides){
-        this.sides = sides;
-    }
+        constructor(sides)
+       {
+          this.sides = sides;
+       }
     
-    perimeter() 
-    {
-        let sides = this.sides;
-        let peri = 0;
-        for(let i=0; i<sides.length; i++)
-        {
-            peri = peri + parseInt(sides[i]);
-        }
-        return peri;
+       perimeter() 
+       {
+          let sides = this.sides;
+          let peri = 0;
+          for(let i=0; i<sides.length; i++)
+          {
+              peri = peri + parseInt(sides[i]);
+          }
+          return peri;
+      }
     }
-  }
 
 const rectangle = new Polygon([10, 20, 10, 20]);
 const square = new Polygon([10, 10, 10, 10]);
