@@ -18,14 +18,16 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
 /*
  * Complete the Rectangle function
  */
-function Rectangle(a, b) {
+function Rectangle(a, b) 
+{
    let rectangle = new Object();
     rectangle.length = a;
     rectangle.width = b;
@@ -36,7 +38,8 @@ function Rectangle(a, b) {
 }
 
 
-function main() {
+function main() 
+{
     const a = +(readLine());
     const b = +(readLine());
     
