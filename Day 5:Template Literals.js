@@ -18,7 +18,8 @@ process.stdin.on('end', _ => {
     main();    
 });
 
-function readLine() {
+function readLine() 
+{
     return inputString[currentLine++];
 }
 
@@ -47,7 +48,8 @@ function sides(literals, ...expressions)
 }
 
 
-function main() {
+function main() 
+{
     let s1 = +(readLine());
     let s2 = +(readLine());
     
